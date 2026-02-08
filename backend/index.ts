@@ -13,7 +13,7 @@ const app = express()
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: "https://edenport-folio.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })

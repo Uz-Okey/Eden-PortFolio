@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "backend": "nodemon backend/index.ts",
-    "frontend": "cd frontend && npm run dev",
-    "fullstack": "concurrently \"npm run backend\" \"npm run frontend\""
-  },
+"scripts": {
+  "build": "tsc",
+  "backend": "node dist/backend/index.js",
+  "frontend": "cd frontend && npm run dev",
+  "fullstack": "concurrently \"npm run backend\" \"npm run frontend\""
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
