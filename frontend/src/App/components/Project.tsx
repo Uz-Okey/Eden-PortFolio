@@ -115,7 +115,7 @@ const Project = () => {
 
             {/* Category Filter Bar */}
             <div className="flex flex-wrap justify-center overflow-hidden gap-3 mb-16 overflow-x-auto scrollbar-hide">
-                {Categories.map((cat, index) => (
+                {Categories.slice(0, 8).map((cat, index) => (
                     <button
                         key={index}
                         onClick={() => setActiveCategory(cat.value)}
@@ -134,7 +134,7 @@ const Project = () => {
             <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                 <AnimatePresence mode="popLayout">
                     {filteredProjects.length > 0 ? (
-                        filteredProjects.map((items) => (
+                        filteredProjects.slice(0, 8).map((items) => (
                             <motion.div
                                 key={items._id}
                                 layout

@@ -141,7 +141,7 @@ const Navbar = () => {
                         </div>
                     ) : (
                         <div className='flex flex-col gap-4 mt-auto'>
-                            <Link to="/" onClick={() => setOpen(false)}>
+                            <Link to="/LoginPage" onClick={() => setOpen(false)}>
 
                                 <button className='w-full flex items-center ps-4 gap-10 py-3 hover:text-rose-400 border border-rose-200 rounded-xl'><FaArrowRightFromBracket />Login</button>
                             </Link>
