@@ -34,12 +34,12 @@ const SkillsPage = () => {
     };
 
     const tools = [
-        { name: "Photoshop", role: "Image Manipulation", icon: <SiAdobephotoshop />, color: "text-blue-500 md:text-transparent md:group-hover:text-blue-500", bg: "bg-blue-50 md:bg-transparent md:group-hover:bg-blue-50" },
-        { name: "CorelDraw", role: "Vector Graphics", icon: <SiCoreldraw />, color: "text-green-600 md:text-transparent md:group-hover:text-green-600", bg: "bg-green-50 md:bg-transparent md:group-hover:bg-green-50" },
-        { name: "Canva", role: "Social Media Design", icon: <SiCanva />, color: "text-cyan-400 md:text-transparent md:group-hover:text-cyan-400", bg: "bg-cyan-50 md:bg-transparent md:group-hover:bg-cyan-50" },
-        { name: "Pinterest", role: "Creative Research", icon: <FaPinterest />, color: "text-red-600 md:text-transparent md:group-hover:text-red-600", bg: "bg-red-50 md:bg-transparent md:group-hover:bg-red-50" },
-        { name: "Illustrator", role: "Logo & Illustration", icon: <SiAdobeillustrator />, color: "text-orange-500 md:text-transparent md:group-hover:text-orange-500", bg: "bg-orange-50 md:bg-transparent md:group-hover:bg-orange-50" },
-        { name: "Gemini AI", role: "AI Assisted Design", icon: <RiGeminiFill />, color: "text-purple-500 md:text-transparent md:group-hover:text-purple-500", bg: "bg-purple-50 md:bg-transparent md:group-hover:bg-purple-50" }
+        { name: "Photoshop", role: "Image Manipulation", icon: <SiAdobephotoshop />, color: "text-blue-500", bg: "bg-blue-50" },
+        { name: "CorelDraw", role: "Vector Graphics", icon: <SiCoreldraw />, color: "text-green-600", bg: "bg-green-50" },
+        { name: "Canva", role: "Social Media Design", icon: <SiCanva />, color: "text-cyan-400", bg: "bg-cyan-50" },
+        { name: "Pinterest", role: "Creative Research", icon: <FaPinterest />, color: "text-red-600", bg: "bg-red-50" },
+        { name: "Illustrator", role: "Logo & Illustration", icon: <SiAdobeillustrator />, color: "text-orange-500", bg: "bg-orange-50" },
+        { name: "Gemini AI", role: "AI Assisted Design", icon: <RiGeminiFill />, color: "text-purple-500", bg: "bg-purple-50" }
     ];
 
     return (
@@ -70,16 +70,16 @@ const SkillsPage = () => {
                             custom={i}
                             variants={itemVariants}
                             whileHover={{ y: -10, transition: { duration: 0.2 } }}
-                            className="relative overflow-hidden bg-white p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col items-center group cursor-default"
+                            className="relative overflow-hidden p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col items-center group cursor-default"
                         >
                             {/* Background */}
-                            <div className={`absolute inset-0 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 ${tool.bg}`} />
+                            <div className={`absolute inset-0 ${tool.bg} transition-all duration-300`} />
 
                             <div className="relative z-10 flex flex-col items-center">
                                 {/* Icon */}
                                 <motion.div
                                     whileHover={{ rotate: 10, scale: 1.1 }}
-                                    className={`text-6xl mb-6 transition-all duration-500 ${tool.color} grayscale md:grayscale-100 md:group-hover:grayscale-0`}
+                                    className={`text-6xl mb-6 transition-all duration-500 ${tool.color}`}
                                 >
                                     {tool.icon}
                                 </motion.div>
