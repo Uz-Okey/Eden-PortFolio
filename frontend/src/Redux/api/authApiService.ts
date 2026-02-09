@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios";
 
 axios.defaults.withCredentials = true;
 
-const API_URL = "http://localhost:5000/api/user";
+const API_URL = "https://eden-portfolio-4.onrender.com/api/user";
 
 interface registerRequest {
   username: string;
