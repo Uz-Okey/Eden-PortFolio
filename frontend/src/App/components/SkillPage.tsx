@@ -35,12 +35,12 @@ const SkillsPage = () => {
     };
 
     const tools = [
-        { name: "Photoshop", role: "Image Manipulation", icon: <SiAdobephotoshop />, color: "text-blue-500", bg: "group-hover:bg-blue-50 sm:bg-blue-50" },
-        { name: "CorelDraw", role: "Vector Graphics", icon: <SiCoreldraw />, color: "text-green-600", bg: "group-hover:bg-green-50 sm:bg-green-50" },
-        { name: "Canva", role: "Social Media Design", icon: <SiCanva />, color: "text-cyan-400", bg: "group-hover:bg-cyan-50 sm:bg-cyan-50" },
-        { name: "Pinterest", role: "Creative Research", icon: <FaPinterest />, color: "text-red-600", bg: "group-hover:bg-red-50 sm:bg-red-50" },
-        { name: "Illustrator", role: "Logo & Illustration", icon: <SiAdobeillustrator />, color: "text-orange-500", bg: "group-hover:bg-orange-50 sm:bg-orange-50" },
-        { name: "Gemini AI", role: "AI Assisted Design", icon: <RiGeminiFill />, color: "text-purple-500", bg: "group-hover:bg-purple-50 sm:bg-purple-50" }
+        { name: "Photoshop", role: "Image Manipulation", icon: <SiAdobephotoshop />, color: "text-blue-500", bg: "md:group-hover:bg-blue-50 bg-blue-50" },
+        { name: "CorelDraw", role: "Vector Graphics", icon: <SiCoreldraw />, color: "text-green-600", bg: "md:group-hover:bg-green-50 bg-green-50" },
+        { name: "Canva", role: "Social Media Design", icon: <SiCanva />, color: "text-cyan-400", bg: "md:group-hover:bg-cyan-50 bg-cyan-50" },
+        { name: "Pinterest", role: "Creative Research", icon: <FaPinterest />, color: "text-red-600", bg: "md:group-hover:bg-red-50 bg-red-50" },
+        { name: "Illustrator", role: "Logo & Illustration", icon: <SiAdobeillustrator />, color: "text-orange-500", bg: "md:group-hover:bg-orange-50 bg-orange-50" },
+        { name: "Gemini AI", role: "AI Assisted Design", icon: <RiGeminiFill />, color: "text-purple-500", bg: "md:group-hover:bg-purple-50 bg-purple-50" }
     ];
 
     return (
