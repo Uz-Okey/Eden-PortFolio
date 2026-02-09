@@ -1,8 +1,6 @@
 import axios from "axios";
 
-
-const API_URL = 
-  (import.meta.env.VITE_APP_API_URL || "http://localhost:5000") + "/api/project";
+const API_URL = "https://eden-portfolio-4.onrender.com/api/project";
 // In projectApiService.ts, add at the top:
 axios.defaults.withCredentials = true;
 export interface frontendRequest {
